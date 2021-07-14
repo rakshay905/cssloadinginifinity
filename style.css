@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    background: pink;
+    overflow: hidden;
+}
+
+svg {
+    max-width: 30em;
+    stroke: #0fb9b1;
+    stroke-linecap: round;
+    fill: none;
+    stroke-width: 7%;
+    margin-top: 200px;
+}
+
+svg use {
+    stroke: #fff;
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    to {
+stroke-dashoffset: 0px;
+    }
+}
